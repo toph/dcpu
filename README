@@ -1,0 +1,5 @@
+Usage:
+
+ruby asm.rb test.s
+
+Produces formated hex to stdout and a loadable binary at "test.s.o"
