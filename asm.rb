@@ -146,7 +146,7 @@ class Assembler
         op.error("Malformed indirect offset value #{inner}") unless INT_RE === offset && REG_RE === reg
         value = offset.to_i
         op.extend value
-        return INDIRECT_OFFSET
+        return INDIRECT_OFFSET + VALUES[reg]
       end
     end
 
